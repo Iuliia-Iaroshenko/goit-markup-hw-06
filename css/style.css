@@ -658,10 +658,9 @@ footer {
   border-radius: 4px;
 }
 
-/* 
 .signup-input:focus {
   outline-color: var(--blue-text);
-} */
+}
 
 .btn-submit {
   position: relative;
