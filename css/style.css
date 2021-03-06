@@ -658,9 +658,10 @@ footer {
   border-radius: 4px;
 }
 
+/* 
 .signup-input:focus {
-  outline: 1px solid var(--blue-text);
-}
+  outline-color: var(--blue-text);
+} */
 
 .btn-submit {
   position: relative;
@@ -735,6 +736,7 @@ footer {
 }
 
 .modal-title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -761,6 +763,192 @@ footer {
 .btn-modal-close:focus {
   cursor: pointer;
   fill: var(--blue-text);
+}
+
+.modal-form-field {
+  width: 448px;
+}
+
+.modal-form-name,
+.modal-form-tel,
+.modal-form-mail {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.modal-input-name,
+.modal-input-tel,
+.modal-input-mail {
+  margin: 0;
+  height: 40px;
+  width: 100%;
+  padding: 12px;
+  padding-left: 42px;
+  align-items: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-lable-name,
+.modal-lable-tel,
+.modal-lable-mail {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  transform: translateY(-50%);
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--grey-text);
+}
+
+.modal-input-name:focus ~ .icon-modal-person,
+.modal-input-tel:focus ~ .icon-modal-phone,
+.modal-input-mail:focus ~ .icon-modal-mail {
+  fill: var(--blue-text);
+}
+
+.modal-input-name:focus,
+.modal-input-tel:focus,
+.modal-input-mail:focus,
+.modal-comments:focus {
+  outline-color: var(--blue-text);
+}
+
+.icon-modal-person,
+.icon-modal-phone,
+.icon-modal-mail {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: inherit;
+}
+
+/* label со сдвигом над input*/
+/* 
+.modal-lable-name,
+.modal-lable-tel,
+.modal-lable-mail {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--grey-text);
+} */
+
+/* .modal-input-name:focus + .modal-lable-name,
+.modal-input-tel:focus + .modal-lable-tel,
+.modal-input-mail:focus + .modal-lable-mail {
+  transform: translate(-42px, -40px);
+} */
+
+.modal-form-comments {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.modal-comments {
+  margin: 0;
+  width: 100%;
+  padding: 12px 16px;
+  resize: none;
+  align-items: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-lable-comments {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  transform: translateY(-50%);
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--grey-text);
+}
+
+.confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal-checkbox {
+  appearance: none;
+}
+
+.icon-modal-confirm {
+  display: block;
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  border: 2px solid var(--black-text);
+}
+
+.modal-checkbox:checked ~ .icon-modal-confirm {
+  background-color: var(--blue-text);
+  border: none;
+}
+
+.modal-label-confirm {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.174;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+}
+
+.link-confirm {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.174;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  color: var(--blue-text);
+}
+
+.btn-confirm {
+  margin: 0 120px;
+  width: 200px;
+  height: 50px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+  background-color: var(--blue-text);
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.btn-confirm:hover,
+.btn-confirm:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* Портфолио */
