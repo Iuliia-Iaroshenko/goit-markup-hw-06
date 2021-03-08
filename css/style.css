@@ -659,7 +659,8 @@ footer {
 }
 
 .signup-input:focus {
-  outline-color: var(--blue-text);
+  outline: none;
+  border-color: var(--blue-text);
 }
 
 .btn-submit {
@@ -814,7 +815,8 @@ footer {
 .modal-input-tel:focus,
 .modal-input-mail:focus,
 .modal-comments:focus {
-  outline-color: var(--blue-text);
+  outline: none;
+  border-color: var(--blue-text);
 }
 
 .icon-modal-person,
@@ -880,8 +882,8 @@ footer {
 }
 
 .confirm {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  width: 100%;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -891,24 +893,26 @@ footer {
 }
 
 .icon-modal-confirm {
-  display: block;
+  display: inline-flex;
   margin-right: 8px;
   width: 15px;
   height: 15px;
   align-items: center;
-  border: 2px solid var(--black-text);
+  border: 1px solid var(--black-text);
 }
 
-.modal-checkbox:checked ~ .icon-modal-confirm {
+.modal-checkbox:checked + .icon-modal-confirm {
   background-color: var(--blue-text);
   border: none;
 }
 
 .modal-label-confirm {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.174;
   letter-spacing: 0.03em;
+
   color: var(--grey-text);
 }
 
